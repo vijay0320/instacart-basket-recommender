@@ -1,0 +1,44 @@
+# =========================
+# Data (DO NOT COMMIT)
+# =========================
+datasets/
+data/
+*.csv
+*.parquet
+*.zip
+
+# =========================
+# Model artifacts
+# =========================
+# Ignore all model files except basket_reccomender.pth
+*.pt
+*.pth
+!basket_reccomender.pth
+
+# Ignore all pickle files except the ones mapping products
+*.pkl
+!idx_to_product_id.pkl
+!product_id_to_idx.pkl
+!product_id_to_name.pkl
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+.env/
